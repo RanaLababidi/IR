@@ -11,7 +11,7 @@ from text_processing.text_preprocessing import get_preprocessed_text_terms
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="",  
+    password="root",  
     database="ir" 
 )
 cursor = conn.cursor()

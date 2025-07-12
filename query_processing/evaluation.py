@@ -99,7 +99,7 @@ def evaluation_calc(dataset_name, top_k=10, similarity_threshold=0.3, method="em
 
     elapsed_time = time.time() - start_time 
 
-    print(f"⏱️ زمن التنفيذ: {208:.2f} ثانية")
+    print(f"⏱️ زمن التنفيذ: {elapsed_time:.2f} ثانية")
 
 
     print(results)

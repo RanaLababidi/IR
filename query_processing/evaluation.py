@@ -67,8 +67,7 @@ def get_all_quires_result(queries_corpus, dataset_name, method="embedding", top_
         else:
             raise ValueError(f"[X] Unknown method: {method}")
         
-        if count>=1:
-          break
+        
         
         if results:
             search_results[query_id] = results

@@ -24,3 +24,4 @@ __pycache__/
 vectorize/saved_models/**/*
 indexing/saved_models/**/*
 .idea/
+templates/hybrid_search.html

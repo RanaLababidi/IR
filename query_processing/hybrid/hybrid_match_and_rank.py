@@ -8,6 +8,12 @@ import numpy as np
 from .hybrid_query_process import process_hybrid_query
 from storage.vector_storage import load_hyprid_ids
 from vectorize.hybrid import generate_hybrid
+from embedding.embadding_ranking import match_and_rank_embedding
+from tf.ranking import match_and_rank_tfidf
+import numpy as np
+
+from collections import OrderedDict
+import numpy as np
 
 def match_and_rank_hybrid(query_text: str, dataset_name: str, top_k=10, similarity_threshold=0.3, alpha=0.5):
 

@@ -11,13 +11,12 @@ def build_vector_func(dataset_name:str):
  
  embeddings = load_embeddings(f"{dataset_name}_all")  
 
-
  dimension = embeddings.shape[1]
 
  index = faiss.IndexFlatL2(dimension)
 
  index.add(embeddings)
 
- faiss.write_index(index, f"vector_store_index/embedding/{dataset_name}_faiss_index.index")
+ faiss.write_index(index, f"vector_store_index/{dataset_name}_faiss_index.index")
 
  print(f"[✓] تم إنشاء وحفظ الفهرس بنجاح. عدد العناصر:", index.ntotal)
